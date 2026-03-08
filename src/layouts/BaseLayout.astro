@@ -26,9 +26,10 @@ const base = import.meta.env.BASE_URL;
       .item-card::part(base) { border-radius: .9rem; border: 1px solid #e6eaf2; box-shadow: 0 8px 24px rgba(15, 23, 42, .04); }
       .item h3 { margin: .15rem 0 .35rem; font-size: 1.05rem; }
       .item p { margin: .35rem 0; }
-      .tabs-wrap { display: flex; flex-wrap: wrap; gap: .45rem; margin-bottom: .8rem; }
-      .tab-btn { border: 1px solid #d5dcec; background: #fff; border-radius: 999px; padding: .35rem .85rem; font-size: .88rem; cursor: pointer; }
-      .tab-btn[aria-pressed='true'] { background: #e8eeff; border-color: #b9c9f7; color: #1d4ed8; font-weight: 600; }
+      sl-tab-group::part(base) { background: #fff; border: 1px solid #e5e7eb; border-radius: .9rem; padding: .4rem .4rem .8rem; }
+      sl-tab-group::part(nav) { padding: .2rem .2rem .5rem; border-bottom: 1px solid #e8edf5; }
+      sl-tab::part(base) { border-radius: .6rem; }
+      sl-tab-panel::part(base) { padding-top: .55rem; }
       @media (min-width: 900px) { .main { grid-template-columns: 2.1fr .9fr; } }
     </style>
     <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.15.1/cdn/shoelace-autoloader.js"></script>

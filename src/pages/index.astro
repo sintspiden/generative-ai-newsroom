@@ -9,7 +9,6 @@ const sourceMap = await getSourceMap();
 const monthlyMap = await getMonthlyMap();
 const sourcesToday = new Set(items.map((item) => item.data.source).filter(Boolean));
 const frontpageCategories = Array.from(new Set(items.map((item) => item.data.category))).sort((a, b) => a.localeCompare(b));
-const defaultCategory = frontpageCategories[0] ?? '';
 const base = import.meta.env.BASE_URL;
 ---
 
@@ -23,27 +22,32 @@ const base = import.meta.env.BASE_URL;
   <div class="main">
     <section>
       <h2 style="margin-top:0">Latest feed</h2>
-      {frontpageCategories.length > 0 && (
-        <div id="category-tabs" style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:.8rem">
-          {frontpageCategories.map((category) => (
-            <button
-              type="button"
-              class="tab-btn"
-              data-category={category}
-              aria-pressed={category === defaultCategory ? 'true' : 'false'}
-            >
-              {category}
-            </button>
-          ))}
+      {frontpageCategories.length > 0 ? (
+        <sl-tab-group>
+          {frontpageCategories.map((category) => {
+            const categorySlug = slugify(category);
+            return <sl-tab slot="nav" panel={categorySlug}>{category}</sl-tab>;
+          })}
+
+          {frontpageCategories.map((category) => {
+            const categorySlug = slugify(category);
+            const categoryItems = items.filter((item) => item.data.category === category);
+            return (
+              <sl-tab-panel name={categorySlug}>
+                <div class="feed">
+                  {categoryItems.length
+                    ? categoryItems.map((item) => <NewsItem item={item} />)
+                    : <p class="muted">No items found for this category.</p>}
+                </div>
+              </sl-tab-panel>
+            );
+          })}
+        </sl-tab-group>
+      ) : (
+        <div class="feed">
+          {items.length ? items.map((item) => <NewsItem item={item} />) : <p class="muted">No content items found.</p>}
         </div>
       )}
-      <div class="feed" id="frontpage-feed">
-        {items.length ? items.map((item) => (
-          <div data-feed-category={item.data.category}>
-            <NewsItem item={item} />
-          </div>
-        )) : <p class="muted">No content items found.</p>}
-      </div>
     </section>
 
     <aside class="panel">
@@ -75,27 +79,4 @@ const base = import.meta.env.BASE_URL;
     </aside>
   </div>
 
-  <script is:inline>
-    const tabButtons = Array.from(document.querySelectorAll('.tab-btn'));
-    const feedItems = Array.from(document.querySelectorAll('#frontpage-feed > [data-feed-category]'));
-
-    function applyCategory(category) {
-      feedItems.forEach((el) => {
-        const matches = el.getAttribute('data-feed-category') === category;
-        el.style.display = matches ? '' : 'none';
-      });
-      tabButtons.forEach((btn) => {
-        const active = btn.getAttribute('data-category') === category;
-        btn.setAttribute('aria-pressed', active ? 'true' : 'false');
-      });
-    }
-
-    tabButtons.forEach((btn) => {
-      btn.addEventListener('click', () => applyCategory(btn.getAttribute('data-category')));
-    });
-
-    if (tabButtons.length > 0) {
-      applyCategory(tabButtons[0].getAttribute('data-category'));
-    }
-  </script>
 </BaseLayout>
