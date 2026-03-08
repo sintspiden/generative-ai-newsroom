@@ -7,7 +7,7 @@ const date = new Date(item.data.date);
 const base = import.meta.env.BASE_URL;
 ---
 
-<article class="panel item" data-pagefind-body>
+<article class="panel item news-card" data-pagefind-body>
   <div class="muted" style="font-size:.84rem; margin-bottom:.25rem">
     <sl-badge pill>{item.data.category}</sl-badge>
     {item.data.source && <span data-pagefind-meta="source"> {item.data.source}</span>}
