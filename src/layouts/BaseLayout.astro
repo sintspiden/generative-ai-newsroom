@@ -22,6 +22,8 @@ const base = import.meta.env.BASE_URL;
       .panel { background: white; border: 1px solid var(--line); border-radius: .7rem; padding: .9rem; }
       .muted { color: var(--muted); }
       .pill { display: inline-block; background: var(--pill); border-radius: 999px; padding: .2rem .55rem; font-size: .78rem; margin-right: .4rem; }
+      .tab-btn { border: 1px solid var(--line); background: white; border-radius: 999px; padding: .35rem .8rem; font-size: .9rem; cursor: pointer; }
+      .tab-btn[aria-pressed='true'] { background: var(--pill); border-color: #c9d7ff; font-weight: 600; }
       .feed { display: grid; gap: .75rem; }
       .item h3 { margin: .2rem 0 .4rem; font-size: 1.03rem; }
       .item p { margin: .35rem 0; }
