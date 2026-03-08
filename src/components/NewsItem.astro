@@ -7,10 +7,10 @@ const date = new Date(item.data.date);
 const base = import.meta.env.BASE_URL;
 ---
 
-<article class="panel item" data-pagefind-body>
-  <div class="muted" style="font-size:.84rem">
-    <span class="pill" data-pagefind-meta="category">{item.data.category}</span>
-    {item.data.source && <span data-pagefind-meta="source">{item.data.source}</span>}
+<sl-card class="item item-card" data-pagefind-body>
+  <div class="muted" style="font-size:.84rem; margin-bottom:.25rem">
+    <sl-badge pill>{item.data.category}</sl-badge>
+    {item.data.source && <span data-pagefind-meta="source"> {item.data.source}</span>}
     <span> · {date.toLocaleString('en-CA', { dateStyle: 'medium', timeStyle: 'short' })}</span>
   </div>
   <h3 data-pagefind-meta="title"><a href={`${base}item/${item.slug}/`}>{item.data.title}</a></h3>
@@ -23,4 +23,4 @@ const base = import.meta.env.BASE_URL;
     {' · '}
     <a href={`${base}category/${slugify(item.data.category)}/`}>Category page</a>
   </p>
-</article>
+</sl-card>
