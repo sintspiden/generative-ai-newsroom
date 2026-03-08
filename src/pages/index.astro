@@ -1,0 +1,57 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import NewsItem from '../components/NewsItem.astro';
+import { getCategoryMap, getLatestDayItems, getMonthlyMap, getSourceMap, slugify } from '../lib/news';
+
+const { latestDay, items } = await getLatestDayItems();
+const categoryMap = await getCategoryMap();
+const sourceMap = await getSourceMap();
+const monthlyMap = await getMonthlyMap();
+const sourcesToday = new Set(items.map((item) => item.data.source).filter(Boolean));
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Generative AI Newsroom">
+  <section class="panel" style="margin:1rem 0">
+    <strong>Latest available date:</strong>
+    {latestDay ? new Date(latestDay).toLocaleDateString('en-CA', { dateStyle: 'full' }) : 'No data found'}
+    {latestDay && <span class="muted"> · {items.length} items · {sourcesToday.size} sources</span>}
+  </section>
+
+  <div class="main">
+    <section>
+      <h2 style="margin-top:0">Latest feed</h2>
+      <div class="feed">
+        {items.length ? items.map((item) => <NewsItem item={item} />) : <p class="muted">No content items found.</p>}
+      </div>
+    </section>
+
+    <aside class="panel">
+      <h3 id="categories">Categories</h3>
+      <ul>
+        {Array.from(categoryMap.entries()).map(([category, entries]) => (
+          <li><a href={`${base}category/${slugify(category)}/`}>{category}</a> <span class="muted">({entries.length})</span></li>
+        ))}
+      </ul>
+
+      <h3>Recent archive months</h3>
+      <ul>
+        {Array.from(monthlyMap.entries()).sort((a,b)=> b[0].localeCompare(a[0])).slice(0, 8).map(([month, days]) => {
+          const [year, mm] = month.split('-');
+          return <li><a href={`${base}archive/${year}/${mm}/`}>{month}</a> <span class="muted">({days.length} days)</span></li>;
+        })}
+      </ul>
+
+      {sourceMap.size > 0 && (
+        <>
+          <h3>Sources</h3>
+          <ul>
+            {Array.from(sourceMap.entries()).slice(0, 10).map(([source, entries]) => (
+              <li><a href={`${base}source/${slugify(source)}/`}>{source}</a> <span class="muted">({entries.length})</span></li>
+            ))}
+          </ul>
+        </>
+      )}
+    </aside>
+  </div>
+</BaseLayout>

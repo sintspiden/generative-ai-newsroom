@@ -1,0 +1,21 @@
+{
+  "name": "generative-ai-newsroom",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "build:search": "npm run build && pagefind --site dist",
+    "preview": "astro preview",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "astro": "^5.18.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.6",
+    "pagefind": "^1.4.0",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import NewsItem from '../../../components/NewsItem.astro';
+import { getSourceMap, slugify } from '../../../lib/news';
+
+export async function getStaticPaths() {
+  const sourceMap = await getSourceMap();
+  return Array.from(sourceMap.entries()).map(([source, items]) => ({
+    params: { slug: slugify(source) },
+    props: { source, items },
+  }));
+}
+
+const { source, items } = Astro.props;
+---
+
+<BaseLayout title={`Source: ${source}`}>
+  <h1>Source: {source}</h1>
+  <p class="muted">{items.length} items</p>
+  <div class="feed">{items.map((item) => <NewsItem item={item} />)}</div>
+</BaseLayout>

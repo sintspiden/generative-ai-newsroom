@@ -1,0 +1,18 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getMonthlyMap } from '../../lib/news';
+
+const monthlyMap = await getMonthlyMap();
+const months = Array.from(monthlyMap.entries()).sort((a, b) => b[0].localeCompare(a[0]));
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title="Archive">
+  <h1>Archive</h1>
+  <ul>
+    {months.map(([month, days]) => {
+      const [year, mm] = month.split('-');
+      return <li><a href={`${base}archive/${year}/${mm}/`}>{month}</a> <span class="muted">({days.length} publishing days)</span></li>;
+    })}
+  </ul>
+</BaseLayout>

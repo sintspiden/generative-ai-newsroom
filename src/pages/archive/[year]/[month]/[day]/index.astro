@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../../../../layouts/BaseLayout.astro';
+import NewsItem from '../../../../../components/NewsItem.astro';
+import { getDayMap } from '../../../../../lib/news';
+
+export async function getStaticPaths() {
+  const dayMap = await getDayMap();
+  return Array.from(dayMap.entries()).map(([day, items]) => {
+    const [year, month, d] = day.split('-');
+    return { params: { year, month, day: d }, props: { day, items } };
+  });
+}
+
+const { day, items } = Astro.props;
+---
+
+<BaseLayout title={`Archive ${day}`}>
+  <h1>{day}</h1>
+  <p class="muted">{items.length} items</p>
+  <div class="feed">{items.map((item) => <NewsItem item={item} />)}</div>
+</BaseLayout>

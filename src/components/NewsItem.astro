@@ -1,0 +1,26 @@
+---
+import type { NewsItem } from '../lib/news';
+import { slugify } from '../lib/news';
+
+const { item } = Astro.props as { item: NewsItem };
+const date = new Date(item.data.date);
+const base = import.meta.env.BASE_URL;
+---
+
+<article class="panel item" data-pagefind-body>
+  <div class="muted" style="font-size:.84rem">
+    <span class="pill" data-pagefind-meta="category">{item.data.category}</span>
+    {item.data.source && <span data-pagefind-meta="source">{item.data.source}</span>}
+    <span> · {date.toLocaleString('en-CA', { dateStyle: 'medium', timeStyle: 'short' })}</span>
+  </div>
+  <h3 data-pagefind-meta="title"><a href={`${base}item/${item.slug}/`}>{item.data.title}</a></h3>
+  {item.data.summary && <p data-pagefind-meta="summary">{item.data.summary}</p>}
+  {item.data.tags?.length > 0 && (
+    <p class="muted" style="font-size:.84rem" data-pagefind-meta="tags">{item.data.tags.join(', ')}</p>
+  )}
+  <p>
+    {item.data.url ? <a href={item.data.url} target="_blank" rel="noopener noreferrer">Read original source ↗</a> : <span class="muted">No source URL provided</span>}
+    {' · '}
+    <a href={`${base}category/${slugify(item.data.category)}/`}>Category page</a>
+  </p>
+</article>

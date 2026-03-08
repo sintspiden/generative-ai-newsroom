@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { getMonthlyMap } from '../../../../lib/news';
+
+export async function getStaticPaths() {
+  const monthlyMap = await getMonthlyMap();
+  return Array.from(monthlyMap.entries()).map(([month, days]) => {
+    const [year, mm] = month.split('-');
+    return { params: { year, month: mm }, props: { month, days } };
+  });
+}
+
+const { month, days } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<BaseLayout title={`Archive ${month}`}>
+  <h1>Archive {month}</h1>
+  <ul>
+    {days.map(({ day, count }) => {
+      const [year, mm, dd] = day.split('-');
+      return <li><a href={`${base}archive/${year}/${mm}/${dd}/`}>{day}</a> <span class="muted">({count} items)</span></li>;
+    })}
+  </ul>
+</BaseLayout>

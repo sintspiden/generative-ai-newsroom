@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import NewsItem from '../../../components/NewsItem.astro';
+import { getCategoryMap, slugify } from '../../../lib/news';
+
+export async function getStaticPaths() {
+  const categoryMap = await getCategoryMap();
+  return Array.from(categoryMap.entries()).map(([category, items]) => ({
+    params: { slug: slugify(category) },
+    props: { category, items },
+  }));
+}
+
+const { category, items } = Astro.props;
+---
+
+<BaseLayout title={`Category: ${category}`}>
+  <h1>Category: {category}</h1>
+  <p class="muted">{items.length} items</p>
+  <div class="feed">{items.map((item) => <NewsItem item={item} />)}</div>
+</BaseLayout>

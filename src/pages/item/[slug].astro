@@ -1,0 +1,26 @@
+---
+import { getCollection, render } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('news');
+  return entries.map((entry) => ({ params: { slug: entry.slug }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+
+<BaseLayout title={entry.data.title}>
+  <article class="panel" data-pagefind-body>
+    <h1 data-pagefind-meta="title">{entry.data.title}</h1>
+    <p class="muted">
+      <span class="pill" data-pagefind-meta="category">{entry.data.category}</span>
+      {entry.data.source && <span data-pagefind-meta="source">{entry.data.source}</span>}
+      <span> · {new Date(entry.data.date).toLocaleString('en-CA', { dateStyle: 'medium', timeStyle: 'short' })}</span>
+    </p>
+    {entry.data.summary && <p data-pagefind-meta="summary">{entry.data.summary}</p>}
+    <Content />
+    <p>{entry.data.url && <a href={entry.data.url} target="_blank" rel="noopener noreferrer">Read original source ↗</a>}</p>
+  </article>
+</BaseLayout>
