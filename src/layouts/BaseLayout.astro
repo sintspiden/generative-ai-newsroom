@@ -22,9 +22,11 @@ const base = import.meta.env.BASE_URL;
       .main { display: grid; gap: 1rem; grid-template-columns: 1fr; }
       .panel { background: #ffffff; border: 1px solid #dbe4f3; border-radius: .9rem; padding: .95rem; box-shadow: 0 8px 22px rgba(30, 41, 59, .05); }
       .muted { color: #5b6b83; }
-      .feed { display: flex; flex-direction: column; gap: .8rem; }
-      .feed > * { width: 100%; display: block; }
-      .item-card::part(base) { border-radius: .95rem; border: 1px solid #dde6f5; background: #ffffff; box-shadow: 0 10px 28px rgba(37, 99, 235, .06); }
+      .feed { display: block; }
+      .feed > * { display: block !important; width: 100% !important; margin: 0 0 .8rem 0; }
+      .feed > *:last-child { margin-bottom: 0; }
+      sl-card, .item-card { display: block !important; width: 100% !important; }
+      .item-card::part(base) { display: block; width: 100%; border-radius: .95rem; border: 1px solid #dde6f5; background: #ffffff; box-shadow: 0 10px 28px rgba(37, 99, 235, .06); }
       .item h3 { margin: .15rem 0 .35rem; font-size: 1.05rem; }
       .item p { margin: .35rem 0; }
       sl-tab-group::part(base) { background: #ffffff; border: 1px solid #dbe4f3; border-radius: .95rem; padding: .45rem .45rem .85rem; box-shadow: 0 10px 24px rgba(30, 41, 59, .04); }
