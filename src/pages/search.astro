@@ -3,8 +3,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout title="Search">
-  <h1>Search</h1>
-  <div id="search"></div>
+  <section class="panel" style="margin:1rem 0">
+    <h1 style="margin:.1rem 0 .2rem">Search</h1>
+    <p class="muted" style="margin:0">Search all newsroom entries and summaries.</p>
+  </section>
+  <sl-card class="item-card">
+    <div id="search"></div>
+  </sl-card>
 
   <link rel="stylesheet" href="../pagefind/pagefind-ui.css" />
   <script is:inline>

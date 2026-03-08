@@ -15,7 +15,9 @@ const { day, items } = Astro.props;
 ---
 
 <BaseLayout title={`Archive ${day}`}>
-  <h1>{day}</h1>
-  <p class="muted">{items.length} items</p>
+  <section class="panel" style="margin:1rem 0">
+    <h1 style="margin:.1rem 0 .2rem">{day}</h1>
+    <p class="muted" style="margin:0">{items.length} items</p>
+  </section>
   <div class="feed">{items.map((item) => <NewsItem item={item} />)}</div>
 </BaseLayout>
