@@ -1,13 +1,14 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import NewsItem from '../components/NewsItem.astro';
-import { getCategoryMap, getLatestDayItems, getMonthlyMap, getSourceMap, slugify } from '../lib/news';
+import { getCategoryMap, getNewsItems, getMonthlyMap, getSourceMap, slugify, toDayKey } from '../lib/news';
 
-const { latestDay, items } = await getLatestDayItems();
+const items = await getNewsItems();
+const latestDay = items.length ? toDayKey(items[0].data.date) : null;
 const categoryMap = await getCategoryMap();
 const sourceMap = await getSourceMap();
 const monthlyMap = await getMonthlyMap();
-const sourcesToday = new Set(items.map((item) => item.data.source).filter(Boolean));
+const sourcesAll = new Set(items.map((item) => item.data.source).filter(Boolean));
 const frontpageCategories = Array.from(new Set(items.map((item) => item.data.category))).sort((a, b) => a.localeCompare(b));
 const base = import.meta.env.BASE_URL;
 ---
@@ -16,7 +17,7 @@ const base = import.meta.env.BASE_URL;
   <section class="panel" style="margin:1rem 0">
     <strong>Latest available date:</strong>
     {latestDay ? new Date(latestDay).toLocaleDateString('en-CA', { dateStyle: 'full' }) : 'No data found'}
-    {latestDay && <span class="muted"> · {items.length} items · {sourcesToday.size} sources</span>}
+    {latestDay && <span class="muted"> · {items.length} items · {sourcesAll.size} sources</span>}
   </section>
 
   <div class="main">
