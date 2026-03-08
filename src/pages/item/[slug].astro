@@ -12,7 +12,7 @@ const { Content } = await render(entry);
 ---
 
 <BaseLayout title={entry.data.title}>
-  <sl-card class="item-card" data-pagefind-body>
+  <article class="panel item" data-pagefind-body>
     <h1 data-pagefind-meta="title" style="margin:.1rem 0 .35rem">{entry.data.title}</h1>
     <p class="muted" style="margin:.2rem 0 .7rem">
       <sl-badge pill data-pagefind-meta="category">{entry.data.category}</sl-badge>
@@ -22,5 +22,5 @@ const { Content } = await render(entry);
     {entry.data.summary && <p data-pagefind-meta="summary">{entry.data.summary}</p>}
     <Content />
     <p>{entry.data.url && <a href={entry.data.url} target="_blank" rel="noopener noreferrer">Read original source ↗</a>}</p>
-  </sl-card>
+  </article>
 </BaseLayout>
