@@ -2,6 +2,8 @@
 
 Static newsroom site for aggregated generative AI updates. Markdown files are the source of truth and Astro generates all pages at build time.
 
+[https://sintspiden.github.io/generative-ai-newsroom/](https://sintspiden.github.io/generative-ai-newsroom/)
+
 ## Features
 
 - Landing page shows the **latest available day** in the dataset
