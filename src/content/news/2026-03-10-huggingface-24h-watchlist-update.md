@@ -1,25 +1,28 @@
 ---
 title: "24h HuggingFace Watchlist Update"
-date: "2026-03-10T13:36:32Z"
+date: "2026-03-10T13:44:53Z"
 category: "HuggingFace"
 source: "Tracked users/orgs"
 tags: ["huggingface", "24h", "watchlist", "models"]
-summary: "24h Hugging Face roundup across tracked users/orgs with activity from 3 accounts."
+summary: "24h Hugging Face roundup across tracked users/orgs with activity from 5 accounts."
 url: "https://huggingface.co/models"
 importance: 4
-entities: ["Lightricks", "unslothai", "kijai", "bartowski", "mlx-community", "Qwen", "mistralai", "NousResearch", "deepseek-ai", "black-forest-labs", "TencentARC"]
+entities: ["Lightricks", "unsloth", "Kijai", "zai-org", "bartowski", "mlx-community", "Qwen", "mistralai", "NousResearch", "deepseek-ai", "black-forest-labs", "TencentARC"]
 ---
 
-Window: **last 24 hours** (generated 2026-03-10 22:36 JST).
+Window: **last 24 hours** (generated 2026-03-10 22:44 JST).
 
 https://huggingface.co/Lightricks
 - no model updates in last 24h
 
-https://huggingface.co/unslothai
+https://huggingface.co/unsloth
+- [unsloth/LTX-2.3-GGUF](https://huggingface.co/unsloth/LTX-2.3-GGUF) — updated 03-10 05:05 JST; downloads 39689, likes 98.
+
+https://huggingface.co/Kijai
 - no model updates in last 24h
 
-https://huggingface.co/kijai
-- no public models found
+https://huggingface.co/zai-org
+- [zai-org/GLM-5](https://huggingface.co/zai-org/GLM-5) — updated 03-10 17:48 JST; downloads 234052, likes 1762.
 
 https://huggingface.co/bartowski
 - [bartowski/Qwen_Qwen3.5-9B-GGUF](https://huggingface.co/bartowski/Qwen_Qwen3.5-9B-GGUF) — updated 03-10 12:25 JST; downloads 58428, likes 20.
@@ -37,7 +40,7 @@ https://huggingface.co/mistralai
 - no model updates in last 24h
 
 https://huggingface.co/NousResearch
-- [NousResearch/moe-10b-a1b-8k-wsd-lr3e4-1t](https://huggingface.co/NousResearch/moe-10b-a1b-8k-wsd-lr3e4-1t) — updated 03-10 20:32 JST; downloads 0, likes 4.
+- [NousResearch/moe-10b-a1b-8k-wsd-lr3e4-1t](https://huggingface.co/NousResearch/moe-10b-a1b-8k-wsd-lr3e4-1t) — updated 03-10 22:39 JST; downloads 0, likes 4.
 
 https://huggingface.co/deepseek-ai
 - no model updates in last 24h
