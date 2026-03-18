@@ -10,13 +10,15 @@
     "preview": "astro preview",
     "check": "astro check",
     "lint:content": "node scripts/validate-news-frontmatter.mjs",
-    "ci:check": "npm run lint:content && npm run build:search"
+    "ci:check": "npm run lint:content && npm run build:search",
+    "prepare": "husky"
   },
   "dependencies": {
     "astro": "^5.18.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.6",
+    "husky": "^9.1.7",
     "pagefind": "^1.4.0",
     "typescript": "^5.9.3"
   }
