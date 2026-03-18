@@ -8,7 +8,9 @@
     "build": "astro build",
     "build:search": "npm run build && pagefind --site dist",
     "preview": "astro preview",
-    "check": "astro check"
+    "check": "astro check",
+    "lint:content": "node scripts/validate-news-frontmatter.mjs",
+    "ci:check": "npm run lint:content && npm run build:search"
   },
   "dependencies": {
     "astro": "^5.18.0"
