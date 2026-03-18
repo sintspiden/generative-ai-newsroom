@@ -1,5 +1,6 @@
 ---
 title: "Real-Time 1080p Video Generation on a single GPU"
+date: "2026-03-15"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rtrg6g/realtime_1080p_video_generation_on_a_single_gpu/

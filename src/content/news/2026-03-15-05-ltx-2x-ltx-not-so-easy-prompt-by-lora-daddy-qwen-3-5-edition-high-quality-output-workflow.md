@@ -1,5 +1,6 @@
 ---
 title: "LTX (Not-so) Easy Prompt By lora - daddy Qwen 3.5 Edition + High Quality Output Workflow."
+date: "2026-03-15"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rti37f/ltx_notso_easy_prompt_by_lora_daddy_qwen_35/

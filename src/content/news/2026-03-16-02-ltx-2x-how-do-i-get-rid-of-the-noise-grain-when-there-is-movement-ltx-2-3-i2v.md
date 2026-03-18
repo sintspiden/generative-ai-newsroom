@@ -1,5 +1,6 @@
 ---
 title: "How do i get rid of the noise/grain when there is movement? (LTX 2.3 I2V)"
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rtzies/how_do_i_get_rid_of_the_noisegrain_when_there_is/

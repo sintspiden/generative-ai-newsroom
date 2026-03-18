@@ -1,5 +1,6 @@
 ---
 title: "I need your help"
+date: "2026-03-18"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rwd73v/i_need_your_help/

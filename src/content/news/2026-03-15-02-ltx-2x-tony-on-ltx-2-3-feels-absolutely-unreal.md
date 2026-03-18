@@ -1,5 +1,6 @@
 ---
 title: "Tony on LTX 2.3 feels absolutely unreal !"
+date: "2026-03-15"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rt64ji/tony_on_ltx_23_feels_absolutely_unreal/

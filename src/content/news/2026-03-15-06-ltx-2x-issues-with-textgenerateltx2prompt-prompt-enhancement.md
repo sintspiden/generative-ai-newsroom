@@ -1,5 +1,6 @@
 ---
 title: "Issues with TextGenerateLTX2Prompt prompt enhancement"
+date: "2026-03-15"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rtj6f3/issues_with_textgenerateltx2prompt_prompt/

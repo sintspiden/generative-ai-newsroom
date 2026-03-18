@@ -1,5 +1,6 @@
 ---
 title: "LTX 2.3 Blurry teeth at medium shot range - can it be fixed?"
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rv88gi/ltx_23_blurry_teeth_at_medium_shot_range_can_it/

@@ -1,5 +1,6 @@
 ---
 title: "Boy I got so high for this !. Watch in 4k. LTX 2.3 with reference actors, workflow included. Please watch the whole clip, I put a lot of work into it. Ace Step 1.5 and IndexTTS and Flux Klein also used."
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1ru3c3e/boy_i_got_so_high_for_this_watch_in_4k_ltx_23/

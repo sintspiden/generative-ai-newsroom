@@ -1,5 +1,6 @@
 ---
 title: "Ome Omy -- :90 cold open for an AI-generated mockumentary. QWEN 2509/2511 + LTX 2.3, edited in Premiere."
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1ruofit/ome_omy_90_cold_open_for_an_aigenerated/

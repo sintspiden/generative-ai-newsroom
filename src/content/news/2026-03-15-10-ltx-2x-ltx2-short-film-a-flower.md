@@ -1,5 +1,6 @@
 ---
 title: "LTX2 Short film \"A FLower\""
+date: "2026-03-15"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rtsphf/ltx2_short_film_a_flower/

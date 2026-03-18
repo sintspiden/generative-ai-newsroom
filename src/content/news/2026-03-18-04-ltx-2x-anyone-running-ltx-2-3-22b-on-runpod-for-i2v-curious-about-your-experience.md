@@ -1,5 +1,6 @@
 ---
 title: "Anyone running LTX 2.3 (22B) on RunPod for I2V? Curious about your experience."
+date: "2026-03-18"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rw4y88/anyone_running_ltx_23_22b_on_runpod_for_i2v/

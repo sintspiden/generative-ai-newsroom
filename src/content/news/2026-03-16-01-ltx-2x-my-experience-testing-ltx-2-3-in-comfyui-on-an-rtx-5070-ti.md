@@ -1,5 +1,6 @@
 ---
 title: "My experience testing LTX-2.3 in ComfyUI (on an RTX 5070 Ti)"
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rtxqzq/my_experience_testing_ltx23_in_comfyui_on_an_rtx/

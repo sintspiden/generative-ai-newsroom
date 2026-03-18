@@ -1,5 +1,6 @@
 ---
 title: "LTX 2.3- Pretty awesome for home generation if you ask me"
+date: "2026-03-15"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rt5rni/ltx_23_pretty_awesome_for_home_generation_if_you/

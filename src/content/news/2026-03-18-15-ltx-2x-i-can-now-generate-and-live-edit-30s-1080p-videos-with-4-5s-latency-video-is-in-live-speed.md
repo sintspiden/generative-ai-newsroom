@@ -1,5 +1,6 @@
 ---
 title: "I can now generate and live-edit 30s 1080p videos with 4.5s latency (video is in live speed)"
+date: "2026-03-18"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rwjf3u/i_can_now_generate_and_liveedit_30s_1080p_videos/

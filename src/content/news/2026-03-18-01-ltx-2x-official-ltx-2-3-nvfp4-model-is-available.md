@@ -1,5 +1,6 @@
 ---
 title: "Official LTX-2.3-nvfp4 model is available"
+date: "2026-03-18"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rvxcah/official_ltx23nvfp4_model_is_available/

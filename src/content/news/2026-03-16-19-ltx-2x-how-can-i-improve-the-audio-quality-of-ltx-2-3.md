@@ -1,5 +1,6 @@
 ---
 title: "How can I improve the audio quality of ltx 2.3?"
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rv6b48/how_can_i_improve_the_audio_quality_of_ltx_23/

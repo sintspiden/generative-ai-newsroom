@@ -1,5 +1,6 @@
 ---
 title: "LTX 2.3 Diablo themed cartoon"
+date: "2026-03-15"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rthd17/ltx_23_diablo_themed_cartoon/

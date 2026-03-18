@@ -1,5 +1,6 @@
 ---
 title: "I generated this 5s 1080p video in 4.5s"
+date: "2026-03-15"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rtslza/i_generated_this_5s_1080p_video_in_45s/

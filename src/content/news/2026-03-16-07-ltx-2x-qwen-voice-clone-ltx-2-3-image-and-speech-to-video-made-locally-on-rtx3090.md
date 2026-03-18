@@ -1,5 +1,6 @@
 ---
 title: "Qwen Voice Clone + LTX 2.3 Image and Speech to Video. Made Locally on RTX3090"
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rueqqr/qwen_voice_clone_ltx_23_image_and_speech_to_video/

@@ -1,5 +1,6 @@
 ---
 title: "I like to share my LTX-2.3 Inpaint whit SAM3 workflow whit some QOL. the results not perfect but in slower motion will be better i hope."
+date: "2026-03-17"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rvgmfp/i_like_to_share_my_ltx23_inpaint_whit_sam3/

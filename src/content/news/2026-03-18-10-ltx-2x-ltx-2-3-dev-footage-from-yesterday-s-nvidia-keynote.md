@@ -1,5 +1,6 @@
 ---
 title: "[LTX 2.3 Dev] Footage from yesterday's NVIDIA Keynote"
+date: "2026-03-18"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rwafdj/ltx_23_dev_footage_from_yesterdays_nvidia_keynote/

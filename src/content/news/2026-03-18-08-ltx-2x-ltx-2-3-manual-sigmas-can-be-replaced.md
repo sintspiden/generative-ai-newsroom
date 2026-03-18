@@ -1,5 +1,6 @@
 ---
 title: "LTX 2.3 Manual Sigmas can be replaced"
+date: "2026-03-18"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rw8453/ltx_23_manual_sigmas_can_be_replaced/

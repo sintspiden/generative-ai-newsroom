@@ -1,5 +1,6 @@
 ---
 title: "Showing real capability of LTX loras! Dispatch LTX 2.3 LORA with multiple characters + style"
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rv40xc/showing_real_capability_of_ltx_loras_dispatch_ltx/

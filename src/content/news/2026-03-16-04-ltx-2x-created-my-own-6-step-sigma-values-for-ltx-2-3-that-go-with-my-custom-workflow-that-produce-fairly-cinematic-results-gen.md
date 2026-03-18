@@ -1,5 +1,6 @@
 ---
 title: "Created my own 6 step sigma values for ltx 2.3 that go with my custom workflow that produce fairly cinematic results, gen times for 30s upscaled to 1080p about 5 mins."
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1ru353r/created_my_own_6_step_sigma_values_for_ltx_23/

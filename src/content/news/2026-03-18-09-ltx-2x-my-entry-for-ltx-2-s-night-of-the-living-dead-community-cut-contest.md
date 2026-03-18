@@ -1,5 +1,6 @@
 ---
 title: "My entry for LTX-2's 'Night of the Living Dead Community Cut' contest"
+date: "2026-03-18"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rw96k4/my_entry_for_ltx2s_night_of_the_living_dead/

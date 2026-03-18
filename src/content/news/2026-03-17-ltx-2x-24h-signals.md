@@ -1,5 +1,6 @@
 ---
 title: "LTX-2.x 24h Signals"
+date: "2026-03-17"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 tags: ["ltx-2.3", "ltx-2.x", "reddit", "24h", "signals"]

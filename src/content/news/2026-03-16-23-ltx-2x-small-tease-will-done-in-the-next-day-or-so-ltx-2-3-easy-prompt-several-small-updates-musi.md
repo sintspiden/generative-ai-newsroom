@@ -1,5 +1,6 @@
 ---
 title: "Small tease - will done in the next day or so LTX-2.3 easy prompt Several small updates + music overhaul with 44 pre-set styles.  - Low quality videos (768x768) just for testing."
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rvb5yl/small_tease_will_done_in_the_next_day_or_so_ltx23/

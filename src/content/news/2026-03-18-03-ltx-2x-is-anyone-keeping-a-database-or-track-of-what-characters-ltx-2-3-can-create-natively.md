@@ -1,5 +1,6 @@
 ---
 title: "Is anyone keeping a database or track of what characters LTX 2.3 can create natively?"
+date: "2026-03-18"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rw1kfh/is_anyone_keeping_a_database_or_track_of_what/

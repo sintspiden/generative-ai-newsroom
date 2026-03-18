@@ -1,5 +1,6 @@
 ---
 title: "There is many Gemma-3 models 4b, 12b, and 27b, do they all work with LTX 2.3 ?"
+date: "2026-03-18"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rw04y3/there_is_many_gemma3_models_4b_12b_and_27b_do/

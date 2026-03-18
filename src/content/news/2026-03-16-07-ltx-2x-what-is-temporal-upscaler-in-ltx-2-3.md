@@ -1,5 +1,6 @@
 ---
 title: "What is Temporal Upscaler in LTX 2.3 ?"
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rurqyz/what_is_temporal_upscaler_in_ltx_23/

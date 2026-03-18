@@ -1,5 +1,6 @@
 ---
 title: "LTX 2.3 - Audio Quality worse with Upsampler 1.1?"
+date: "2026-03-18"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rwjyib/ltx_23_audio_quality_worse_with_upsampler_11/

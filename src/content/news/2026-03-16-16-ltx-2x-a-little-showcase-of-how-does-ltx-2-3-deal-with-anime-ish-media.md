@@ -1,5 +1,6 @@
 ---
 title: "A little showcase of how does LTX-2.3 deal with anime-ish media."
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rv3d69/a_little_showcase_of_how_does_ltx23_deal_with/

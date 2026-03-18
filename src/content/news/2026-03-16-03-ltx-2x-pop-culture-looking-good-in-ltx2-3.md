@@ -1,5 +1,6 @@
 ---
 title: "Pop culture looking good in LTX2.3"
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1ru2i7n/pop_culture_looking_good_in_ltx23/

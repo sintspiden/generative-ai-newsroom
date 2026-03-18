@@ -1,5 +1,6 @@
 ---
 title: "Is there diffuser support for ltx 2.3 yet?"
+date: "2026-03-18"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rwl4sc/is_there_diffuser_support_for_ltx_23_yet/

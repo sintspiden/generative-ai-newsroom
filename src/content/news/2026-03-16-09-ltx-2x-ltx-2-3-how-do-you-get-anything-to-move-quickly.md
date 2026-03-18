@@ -1,5 +1,6 @@
 ---
 title: "LTX 2.3 - How do you get anything to move quickly?"
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1ruh6w9/ltx_23_how_do_you_get_anything_to_move_quickly/

@@ -1,5 +1,6 @@
 ---
 title: "the 4th fisherman (a short film made with LTX 2.3) and a local voice cloner)"
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1ruqqxy/the_4th_fisherman_a_short_film_made_with_ltx_23/

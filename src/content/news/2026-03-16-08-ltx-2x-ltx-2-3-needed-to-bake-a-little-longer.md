@@ -1,5 +1,6 @@
 ---
 title: "LTX-2.3 needed to bake a little longer"
+date: "2026-03-16"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rug511/ltx23_needed_to_bake_a_little_longer/

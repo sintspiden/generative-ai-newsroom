@@ -1,5 +1,6 @@
 ---
 title: "LTX 2.3 3K 30s clips generated in 7 minutes on 16gb vram. Utilizing transformer models and separate VAE with Nvidia super upscale"
+date: "2026-03-15"
 category: "LTX-2.3"
 source: "r/StableDiffusion"
 url: https://www.reddit.com/r/StableDiffusion/comments/1rtpxyp/ltx_23_3k_30s_clips_generated_in_7_minutes_on/
