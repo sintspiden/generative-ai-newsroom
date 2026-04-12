@@ -10,5 +10,4 @@ summary: "Question thread on motion-transfer quality expectations in current LTX
 
 This thread highlights **Does LTX 2.3 have good motion transfer?** and captures practical LTX-2.x signals from r/StableDiffusion over the last 24 hours.
 Useful references found in the thread:
-- https://www.youtube.com/watch?v=E\_XRBRykDwE
 - https://www.youtube.com/watch?v=E_XRBRykDwE
