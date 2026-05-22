@@ -1,43 +1,43 @@
 ---
 title: "r/LocalLLaMA Daily Update (24h)"
-date: "2026-05-22T16:44:00Z"
+date: "2026-05-22T22:01:00Z"
 category: "LocalLLaMA"
 source: "r/LocalLLaMA"
 tags: ["reddit", "localllama", "models", "tools", "resources"]
-summary: "Top concrete r/LocalLLaMA updates from the last 24 hours, prioritizing model announcements, tooling/framework changes, and practical resources."
+summary: "Most concrete r/LocalLLaMA updates from the last 24 hours, prioritized by real releases, major version updates, and actionable implementation resources."
 url: "https://www.reddit.com/r/LocalLLaMA/new/"
 importance: 4
-entities: ["Supra-50M", "BitCPM-CANN", "ByteShape Qwen3.6-35B-A3B", "lemon-mlx-engine", "llama.cpp"]
+entities: ["BeeLlama v0.2.0", "ByteShape Qwen3.6-35B-A3B", "BitCPM-CANN", "lemon-mlx-engine", "llama.cpp"]
 ---
 ## Models
 
-- **Supra-50M released** — concrete new model drop with strong early engagement.
-  Reddit: https://www.reddit.com/r/LocalLLaMA/comments/1tkhngq/new_supra50m_released/
+- **BeeLlama v0.2.0 (major DFlash update)** — large reported throughput gains on single RTX 3090 across Qwen/Gemma workloads; one of the strongest concrete performance-release posts in this window.  
+  Reddit: https://www.reddit.com/r/LocalLLaMA/comments/1tkpz2y/beellama_v020_major_dflash_update_single_rtx_3090/
 
-- **OpenBMB BitCPM-CANN (1.58-bit) presented** — notable ultra-low-bit model announcement.
-  Reddit: https://www.reddit.com/r/LocalLLaMA/comments/1tkjpsh/openbmb_presents_the_model_bitcpmcann_158_bit/
-
-- **ByteShape Qwen3.6-35B-A3B** — performance-focused release claim (30% faster than Unsloth IQ on 6GB VRAM laptop).
+- **ByteShape Qwen3.6-35B-A3B** — new quant/perf-focused release claiming ~30% faster inference than Unsloth IQ on 6GB VRAM laptops.  
   Reddit: https://www.reddit.com/r/LocalLLaMA/comments/1tknjcx/byteshape_qwen3635ba3b_30_faster_than_unsloth_iq/
+
+- **OpenBMB BitCPM-CANN (1.58-bit) announcement** — notable ultra-low-bit model release direction relevant to memory-constrained local inference.  
+  Reddit: https://www.reddit.com/r/LocalLLaMA/comments/1tkjpsh/openbmb_presents_the_model_bitcpmcann_158_bit/
 
 ## Tools / Frameworks
 
-- **lemon-mlx-engine (new ROCm-based MLX LLM engine release)** — concrete engine release relevant to local inference stacks.
+- **lemon-mlx-engine (ROCm-based MLX LLM engine) new release** — concrete framework/engine update for AMD/ROCm local stacks.  
   Reddit: https://www.reddit.com/r/LocalLLaMA/comments/1tkbupt/new_release_of_rocm_based_mlx_llm_engine/
 
-- **llama.cpp b9274 reportedly fixes MTP VRAM leak** — meaningful runtime/stability update for local deployments.
+- **llama.cpp update b9274 reported to address MTP VRAM leak** — practical stability/perf fix signal for heavy local use.  
   Reddit: https://www.reddit.com/r/LocalLLaMA/comments/1tk0grd/latest_b9274_addresses_mtp_vram_leak/
 
-- **llama.cpp asymmetric KV q8/q4 cache caveats discussion** — practical implementation notes and tradeoff discussion for memory/perf tuning.
+- **llama.cpp asymmetric KV q8/q4 cache caveats thread** — concrete implementation notes on tradeoffs for memory/speed tuning.  
   Reddit: https://www.reddit.com/r/LocalLLaMA/comments/1tkih6y/llamacpp_asymmetric_kv_q8q4_cache_current_caveats/
 
 ## Resources
 
-- **Qwen3-Coder quantization shootout** — comparative benchmarking resource for choosing quant levels.
+- **Qwen3-Coder quantization shootout** — useful benchmark-style comparison resource for practical quant selection.  
   Reddit: https://www.reddit.com/r/LocalLLaMA/comments/1tkmjmq/i_ran_a_quantization_shootout_on_qwen3coder_and/
 
-- **Low-level coding dataset share** — practical dataset/resource thread for coding model work.
-  Reddit: https://www.reddit.com/r/LocalLLaMA/comments/1tk9a7o/lowlevel_coding_dataset/
-
-- **Prompt injection detector (browser-run) implementation post** — useful defensive tooling/resource with implementation details.
+- **Prompt-injection detector trained with ml-intern + DeepSeek v4 Flash (runs in browser)** — practical defensive implementation resource with reproducible idea/path.  
   Reddit: https://www.reddit.com/r/LocalLLaMA/comments/1tkoeuo/trained_a_prompt_injection_detector_using/
+
+- **Experts-first llama.cpp discussion/thread** — implementation-oriented pointer for MoE handling behavior in llama.cpp usage.  
+  Reddit: https://www.reddit.com/r/LocalLLaMA/comments/1tknbzh/experts_first_llamacpp/
