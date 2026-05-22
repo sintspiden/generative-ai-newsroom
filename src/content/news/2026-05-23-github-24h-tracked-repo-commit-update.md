@@ -1,6 +1,6 @@
 ---
 title: "24h GitHub Commit Update"
-date: "2026-05-22T16:52:51Z"
+date: "2026-05-22T22:02:00Z"
 category: "GitHub"
 source: "Tracked repos"
 tags: ["github", "commits", "daily", "tracked-repos"]
@@ -11,6 +11,7 @@ entities: ["ComfyUI", "LTX-2", "DiffSynth-Studio", "ai-toolkit"]
 slug: "2026-05-23-github-24h-tracked-repo-commit-update"
 ---
 ### https://github.com/Comfy-Org/ComfyUI/tree/master
+- [112fcd5](https://github.com/Comfy-Org/ComfyUI/commit/112fcd5f3b86771d25b74a97e092856375c96daa): openapi: align response declarations with implementation (5 endpoints) (#14058)
 - [1579bbb](https://github.com/Comfy-Org/ComfyUI/commit/1579bbb52de5b439bef0717dce723c39849c6b37): [Partner Nodes] add new Rodin2.5 nodes (#14051)
 - [93888ae](https://github.com/Comfy-Org/ComfyUI/commit/93888ae8e3618a4f1aad0004ca0bfe5f80c9127a): Move logic nodes into utils category (#14033)
 - [38ebc19](https://github.com/Comfy-Org/ComfyUI/commit/38ebc19037cb4f341a5f21c676486dd42299d8ed): Adding in And, Or, and Not nodes. (#14004)
@@ -19,16 +20,13 @@ slug: "2026-05-23-github-24h-tracked-repo-commit-update"
 - [8edff54](https://github.com/Comfy-Org/ComfyUI/commit/8edff549e3195442b4ee2da4f79076ee26d4c653): Update backport workflow to use commit SHA input (#14043)
 - [8fecef0](https://github.com/Comfy-Org/ComfyUI/commit/8fecef0686275c9ce334ac7b6780d35eb93b836f): Add validation for source branch in backport workflow (#14042)
 - [5d681a5](https://github.com/Comfy-Org/ComfyUI/commit/5d681a5420fea4772a4a9c9426c2fce7a88a3d24): Fix SIGPIPE false negative in backport release validation (#14041)
-- [32e5839](https://github.com/Comfy-Org/ComfyUI/commit/32e58393b8c329c1a3fb1ddf74902c182c5064d5): Add backport release workflow. (#14038)
-- [b293f8c](https://github.com/Comfy-Org/ComfyUI/commit/b293f8cefd18b2f8be061e33cb985149ec2ee872): [Partner Nodes] add widget for automatic upscaling for the ByteDance2Reference node (#14032)
-- [2ca1480](https://github.com/Comfy-Org/ComfyUI/commit/2ca1480f9198b04aba5fb03d7584e2fb1a30065f): chore: update workflow templates to v0.9.82 (#14034)
-- [6ecf5ec](https://github.com/Comfy-Org/ComfyUI/commit/6ecf5eca7ac6e5a78af96650c2da33ab8c44bb40): [Partner Nodes] add OpenRouter LLM node (#14007)
 
 ### https://github.com/shootthesound/comfyUI-Realtime-Lora
 - no commits in last 24h
 
 ### https://github.com/ostris/ai-toolkit
-- no commits in last 24h
+- [6102370](https://github.com/ostris/ai-toolkit/commit/6102370df971706eb664a088befc7fe63b924987): Add support for ZImage L2P
+- [6fc08a8](https://github.com/ostris/ai-toolkit/commit/6fc08a89284dfb69f975d6272b76771b6d2e9c81): Fix issue with saving images from new sample viewer
 
 ### https://github.com/AkaneTendo25/musubi-tuner/tree/ltx-2
 - no commits in last 24h
